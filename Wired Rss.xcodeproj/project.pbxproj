@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		5F2C2E0621E609F500956F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C2E0521E609F500956F18 /* AppDelegate.swift */; };
-		5F2C2E0821E609F500956F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C2E0721E609F500956F18 /* ViewController.swift */; };
 		5F2C2E0B21E609F500956F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C2E0921E609F500956F18 /* Main.storyboard */; };
 		5F2C2E0E21E609F600956F18 /* Wired_Rss.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C2E0C21E609F600956F18 /* Wired_Rss.xcdatamodeld */; };
 		5F2C2E1021E609F700956F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C2E0F21E609F700956F18 /* Assets.xcassets */; };
 		5F2C2E1321E609F700956F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C2E1121E609F700956F18 /* LaunchScreen.storyboard */; };
+		5F2C2E1B21E6766800956F18 /* FeedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C2E1A21E6766700956F18 /* FeedList.swift */; };
+		5F2C2E2121E8EAB200956F18 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C2E2021E8EAB200956F18 /* WebViewController.swift */; };
+		E737D9D7E966EA074AF444B0 /* Pods_Wired_Rss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842B53925DC4DD66994CFFC8 /* Pods_Wired_Rss.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F2C2E0221E609F500956F18 /* Wired Rss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Rss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2C2E0521E609F500956F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F2C2E0721E609F500956F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F2C2E0A21E609F500956F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F2C2E0D21E609F600956F18 /* Wired_Rss.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wired_Rss.xcdatamodel; sourceTree = "<group>"; };
 		5F2C2E0F21E609F700956F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F2C2E1221E609F700956F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F2C2E1421E609F700956F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F2C2E1A21E6766700956F18 /* FeedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedList.swift; sourceTree = "<group>"; };
+		5F2C2E2021E8EAB200956F18 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		842B53925DC4DD66994CFFC8 /* Pods_Wired_Rss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wired_Rss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A3AF7ABB267915BB6FF90B /* Pods-Wired Rss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Rss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Rss/Pods-Wired Rss.debug.xcconfig"; sourceTree = "<group>"; };
+		F1DBBC64631528D2C02EF884 /* Pods-Wired Rss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Rss.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Rss/Pods-Wired Rss.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E737D9D7E966EA074AF444B0 /* Pods_Wired_Rss.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				5F2C2E0421E609F500956F18 /* Wired Rss */,
 				5F2C2E0321E609F500956F18 /* Products */,
+				61B84E46D1800BA9BE2127EE /* Pods */,
+				EF195A5E9419591D33A215AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +66,32 @@
 			isa = PBXGroup;
 			children = (
 				5F2C2E0521E609F500956F18 /* AppDelegate.swift */,
-				5F2C2E0721E609F500956F18 /* ViewController.swift */,
+				5F2C2E1A21E6766700956F18 /* FeedList.swift */,
 				5F2C2E0921E609F500956F18 /* Main.storyboard */,
+				5F2C2E2021E8EAB200956F18 /* WebViewController.swift */,
 				5F2C2E0F21E609F700956F18 /* Assets.xcassets */,
 				5F2C2E1121E609F700956F18 /* LaunchScreen.storyboard */,
 				5F2C2E1421E609F700956F18 /* Info.plist */,
 				5F2C2E0C21E609F600956F18 /* Wired_Rss.xcdatamodeld */,
 			);
 			path = "Wired Rss";
+			sourceTree = "<group>";
+		};
+		61B84E46D1800BA9BE2127EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9A3AF7ABB267915BB6FF90B /* Pods-Wired Rss.debug.xcconfig */,
+				F1DBBC64631528D2C02EF884 /* Pods-Wired Rss.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF195A5E9419591D33A215AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				842B53925DC4DD66994CFFC8 /* Pods_Wired_Rss.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F2C2E1721E609F700956F18 /* Build configuration list for PBXNativeTarget "Wired Rss" */;
 			buildPhases = (
+				03A424C4A2A24EEA88F7C562 /* [CP] Check Pods Manifest.lock */,
 				5F2C2DFE21E609F500956F18 /* Sources */,
 				5F2C2DFF21E609F500956F18 /* Frameworks */,
 				5F2C2E0021E609F500956F18 /* Resources */,
+				79AC1D1486C798FDA84B0C80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +162,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03A424C4A2A24EEA88F7C562 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wired Rss-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79AC1D1486C798FDA84B0C80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wired Rss/Pods-Wired Rss-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FeedKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wired Rss/Pods-Wired Rss-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F2C2DFE21E609F500956F18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5F2C2E0E21E609F600956F18 /* Wired_Rss.xcdatamodeld in Sources */,
-				5F2C2E0821E609F500956F18 /* ViewController.swift in Sources */,
+				5F2C2E1B21E6766800956F18 /* FeedList.swift in Sources */,
 				5F2C2E0621E609F500956F18 /* AppDelegate.swift in Sources */,
+				5F2C2E2121E8EAB200956F18 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +361,11 @@
 		};
 		5F2C2E1821E609F700956F18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A3AF7ABB267915BB6FF90B /* Pods-Wired Rss.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G839MR8A88;
 				INFOPLIST_FILE = "Wired Rss/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,9 +380,11 @@
 		};
 		5F2C2E1921E609F700956F18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DBBC64631528D2C02EF884 /* Pods-Wired Rss.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G839MR8A88;
 				INFOPLIST_FILE = "Wired Rss/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
